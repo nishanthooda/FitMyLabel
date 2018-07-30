@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "FitMyLabel is a simple tool, which uses binary search to split up a long string in portions that fit any specified label."
 
-  s.homepage     = "www.example.com/screenshots_2.gif"
+  s.homepage     = "https://github.com/nishanthooda/FitMyLabel.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -62,11 +62,11 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
+  s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+  s.ios.deployment_target = "10.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -93,6 +93,7 @@ Pod::Spec.new do |s|
   s.source_files  = "FitMyLabel/FitMyLabel.{swift,h}"
   s.exclude_files = ""
 
+  s.swift_version = "4.0"
   # s.public_header_files = "Classes/**/*.h"
 
 
