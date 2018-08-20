@@ -41,11 +41,11 @@ Then run `swift build` when ready.
 
 ## Usage
 
-You can use the `splitToFit` function in the `FitMyLabel` class to split your long string into strings that perfectly fit any specified label. The function requires you to specify the string you want to split and the label to split it according to. The function will return an array of strings. 
+You can use the `splitToFit` function in the `FitMyLabel` class to split your long string at intervals that perfectly fit any specified label. The function requires you to specify the string you want to split and the label to split it according to. The function will return an ordered array of strings. 
 
 Note: 
 - You must specify the frame of the label passed as a parameter into the `splitToFit` function. 
-- You may also use autoLayout to layout the label, but must call `setNeedsLayout()` and `layoutIfNeeded()` before calling the `splitToFit` function. 
+- You may also use autoLayout to layout the label, but must call `setNeedsLayout()` and `layoutIfNeeded()` on your label before calling the `splitToFit` function. 
 
 Sample:
 
@@ -54,4 +54,15 @@ let mySuperLongString = "Hello welcome to the FitMyLabel repo..."
 let dummyLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
 
 let mySplitUpString = FitMyLabel.splitToFit(str: mySuperLongString, label: dummyLabel)
+```
+
+You may also use the the `isTruncated()` function on any label to find out if the text currently dispalyed on the label is being truncated. This function will return a boolean indicating whether or not the text has been truncated.
+
+Sample:
+
+```swift
+let dummyLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+dummy.text = "Hello welcome to the FitMyLabel repo..."
+
+let isMyDummyLabelTruncated = dummyLabel.isTruncated()
 ```
