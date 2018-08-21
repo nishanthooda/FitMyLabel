@@ -9,7 +9,7 @@ You can use [CocoaPods](http://cocoapods.org/) to install `FitMyLabel` by adding
 
 ```ruby
 target 'YourProjectName' do
-    pod 'FitMyLabel', '~> 1.0.2'
+    pod 'FitMyLabel', '~> 0.1.0'
 end
 ```
 
@@ -18,7 +18,7 @@ end
 You can use [Carthage](https://github.com/Carthage/Carthage) to install `FitMyLabel` by adding it to your `Cartfile`:
 
 ```
-github "nishanthooda/FitMyLabel" ~> 1.0.2
+github "nishanthooda/FitMyLabel" ~> 0.1.0
 ```
 
 Make sure to add `FitMyLabel.framework` to the "Linked Frameworks and Libraries" section of your target, and include all dependencies in your Carthage framework copying build phase.
@@ -33,7 +33,7 @@ import PackageDescription
 let package = Package(
     name: "YourProjectName",
     dependencies: [
-        .package(url: "https://github.com/nishanthooda/FitMyLabel.git", from: "1.0.2"),
+        .package(url: "https://github.com/nishanthooda/FitMyLabel.git", from: "0.1.0"),
     ]
 )
 ```
